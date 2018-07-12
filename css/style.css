@@ -1,0 +1,153 @@
+body {
+  font-size: 16px;
+  font-family: Roboto, open-sans;
+  background-color: #444;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 375pt;
+  height: 812pt;
+  margin: 16pt auto;
+  /*padding: 16pt; /*iOS guideline*/
+  background-color: #dadada;
+}
+.nav_box {
+  position: relative;
+  display: inline-flex;
+  width: 100%;
+  height: 100pt;
+  background-color: #00B39E;
+}
+
+.nav_box p {
+  font-size: 2em;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+}
+.nav_box #chevron {
+  margin: 0 16pt;
+  position: absolute;
+  top: 50%;
+}
+#status_bar {
+  position: relative;
+  margin: 0 16pt;
+}
+
+.map_container {
+  position: relative;
+  width:375pt;
+  height:375pt;
+}
+.map_image {
+  position: relative;
+  background-image: url("/images/map image.png");
+  background-size: cover;
+  width: 100%;
+  height: 122%;
+
+}
+
+.list_container {
+  position: relative;
+  padding-top: 10pt;
+  margin: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  transform: translateY(10%);
+  transition: transform 0.6s ease;
+}
+
+.list_container.open {
+  transform: translateY(-25%);
+}
+
+#swiper {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.transit_header {
+  padding: 1%;
+  text-align: center;
+  font-size: 1.5em;
+  color: #848484;
+}
+
+#line {
+  height: 1pt;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5pt;
+
+}
+
+.row_container {
+  position: relative;
+  line-height: 1.2em;
+  color: #848484;
+  font-size: 1.2em;
+  display: inline-flex;
+  width: 100%;
+  padding: 0;
+  margin: 1% 0;
+}
+
+.data_category {
+  font-weight: 400;
+  color: #C0C0C0;
+  margin: 2% 0 0 0;
+  font-size: 1.1em;
+}
+
+.bus_group {
+  color: #C0C0C0;
+  font-size: 1em;
+  margin: 5% 0 1% 0;
+  text-align: left;
+  transform: translateX(6.5%);
+}
+
+.bus_number {
+  border: 2pt solid #848484;
+  border-radius: 5pt;
+  width: 30%;
+  padding: 1% 2% 0 2%;
+  margin-top: -3%;
+  text-align: center;
+}
+
+.left_col {
+  padding-left: 25pt;
+  float: left;
+  width: 40%;
+}
+
+.center_col {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.right_col {
+  padding-right: 25pt;
+  float: right;
+  width: 40%;
+  text-align: right;
+}
+
+.green {
+  color: #539B00;
+}
