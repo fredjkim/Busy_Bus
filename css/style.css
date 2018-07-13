@@ -1,6 +1,6 @@
 body {
   font-size: 16px;
-  font-family: Roboto, open-sans;
+  font-family: Helvetica, open-sans;
   background-color: #444;
   box-sizing: border-box;
 }
@@ -8,66 +8,66 @@ body {
 .container {
   position: relative;
   overflow: hidden;
-  width: 375pt;
-  height: 812pt;
-  margin: 16pt auto;
-  /*padding: 16pt; /*iOS guideline*/
+  width: 375px;
+  height: 812px;
+
+  margin: 16px auto;
   background-color: #dadada;
 }
 .nav_box {
   position: relative;
   display: inline-flex;
   width: 100%;
-  height: 100pt;
+  height: 100px;
   background-color: #00B39E;
 }
 
 .nav_box p {
-  font-size: 2em;
+  font-size: 1.4em;
   color: #fff;
   width: 100%;
   text-align: center;
   margin: auto;
   position: absolute;
-  top: 50%;
+  top: 55%;
 }
 .nav_box #chevron {
-  margin: 0 16pt;
+  margin: 0 16px;
   position: absolute;
-  top: 50%;
+  top: 55%;
 }
 #status_bar {
   position: relative;
-  margin: 0 16pt;
+  margin: 0 16px;
 }
 
 .map_container {
   position: relative;
-  width: 375pt;
-  height: 375pt;
+  width: 375px;
+  height: 375px;
 }
+
 .map_image {
   position: relative;
   background-image: url("https://github.com/fredjkim/busybus/blob/master/images/map_image.png?raw=true");
   background-size: cover;
   width: 100%;
-  height: 122%;
-
+  height: 100%;
 }
 
 .list_container {
   position: relative;
-  padding-top: 10pt;
+  padding-top: 10px;
   margin: 0;
   background-color: #fff;
   width: 100%;
   height: 100%;
-  transform: translateY(10%);
+  transform: translateY(0%);
   transition: transform 0.4s ease;
 }
 
 .list_container.open {
-  transform: translateY(-30%);
+  transform: translateY(-45.8%);
 }
 
 #swiper {
@@ -80,69 +80,82 @@ body {
 .transit_header {
   padding: 3%;
   text-align: center;
-  font-size: 1.7em;
+  font-size: 1.2em;
   color: #848484;
 }
 
 #line {
-  height: 5pt;
+  height: 20px;
   position: relative;
   width: 92%;
   margin-left: 4%;
   margin-right: 4%;
+
 }
 
 .row_container {
   position: relative;
-  line-height: 1.25em;
+  line-height: 1.3em;
   color: #848484;
-  font-size: 1.25em;
+  font-size: 1em;
+  font-weight: 300;
   display: inline-flex;
   width: 100%;
   padding: 0;
-  margin: 1% 0;
+  margin: 1.5% 0;
 }
 
 .data_category {
-  font-weight: 400;
-  color: #848484;
-  margin: 2% 0 0 0;
-  font-size: 1.2em;
+  font-weight: 500;
+  color: #c1c1c1;
+  margin: 2% 0 1% 0;
+  font-size: .9em;
 }
 
 .bus_group {
   color: #c1c1c1;
-  font-size: 1em;
-  font-weight: bold;
-  margin: 6% 0 1% 0;
-  text-align: center;
+  font-size: .8em;
+  font-weight: 500;
+  margin: 6% 0 2% 4%;
+  text-align: left;
+}
+
+.first {
+  margin: 0% 0 3% 4%;
 }
 
 .bus_number {
-  border: 2pt solid #848484;
-  border-radius: 5pt;
+  border: 1.5px solid #848484;
+  border-radius: 5px;
   width: 30%;
-  padding: 1% 5% 0 5%;
+  padding: 0% 10% 0 10%;
   margin-top: -3%;
   text-align: center;
 }
 
 .left_col {
-  padding-left: 18pt;
+  padding-left: 16px;
   float: left;
-  width: 40%;
+  width: 30%;
 }
 
 .center_col {
+  text-align: left;
+  width: 50%;
+  transform: translateX(5%);
+  margin: 0 auto;
+}
+
+.true_center {
   text-align: center;
-  width: 70%;
+  width: 30%;
   margin: 0 auto;
 }
 
 .right_col {
-  padding-right: 18pt;
+  padding-right: 16px;
   float: right;
-  width: 40%;
+  width: 30%;
   text-align: right;
 }
 
