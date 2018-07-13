@@ -48,7 +48,7 @@ body {
 }
 .map_image {
   position: relative;
-  background-image: url("/images/map_image.png");
+  background-image: url("https://github.com/fredjkim/busybus/blob/master/images/map_image.png?raw=true");
   background-size: cover;
   width: 100%;
   height: 122%;
@@ -67,7 +67,7 @@ body {
 }
 
 .list_container.open {
-  transform: translateY(-33%);
+  transform: translateY(-30%);
 }
 
 #swiper {
@@ -78,27 +78,25 @@ body {
 }
 
 .transit_header {
-  padding: 1%;
+  padding: 3%;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.7em;
   color: #848484;
 }
 
 #line {
-  height: 1pt;
+  height: 5pt;
   position: relative;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5pt;
-
+  width: 92%;
+  margin-left: 4%;
+  margin-right: 4%;
 }
 
 .row_container {
   position: relative;
-  line-height: 1.2em;
+  line-height: 1.25em;
   color: #848484;
-  font-size: 1.3em;
+  font-size: 1.25em;
   display: inline-flex;
   width: 100%;
   padding: 0;
@@ -107,17 +105,17 @@ body {
 
 .data_category {
   font-weight: 400;
-  color: #C0C0C0;
+  color: #848484;
   margin: 2% 0 0 0;
   font-size: 1.2em;
 }
 
 .bus_group {
-  color: #C0C0C0;
-  font-size: 1.2em;
-  margin: 5% 0 2% 0;
-  text-align: left;
-  transform: translateX(6.5%);
+  color: #c1c1c1;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 6% 0 1% 0;
+  text-align: center;
 }
 
 .bus_number {
@@ -130,7 +128,7 @@ body {
 }
 
 .left_col {
-  padding-left: 25pt;
+  padding-left: 18pt;
   float: left;
   width: 40%;
 }
@@ -142,7 +140,7 @@ body {
 }
 
 .right_col {
-  padding-right: 25pt;
+  padding-right: 18pt;
   float: right;
   width: 40%;
   text-align: right;
