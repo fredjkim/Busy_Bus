@@ -21,7 +21,7 @@ body {
   background-color: #00B39E;
 }
 
-.nav_box p {
+.nav_box h1 {
   font-size: 1.4em;
   color: #fff;
   width: 100%;
@@ -60,15 +60,14 @@ body {
   width: 3px;
   transform: rotate(-45deg) translateX(4px) translateY(-4px);
   background-color: #fff;
-
 }
 
 
 .status_bar {
   position: relative;
-  background-image: url("https://github.com/fredjkim/busybus/blob/master/images/status_Bar.png?raw=true");
+  background-image: url("../images/status_bar.png");
   background-size: cover;
-  width: 94%;
+  width: 93%;
   height: 100%;
   margin: 16px 16px;
 }
@@ -87,7 +86,7 @@ body {
 
 .map_image {
   position: relative;
-  background-image: url("https://github.com/fredjkim/busybus/blob/master/images/map_image.png?raw=true");
+  background-image: url("../images/map_image.png");
   background-size: cover;
   width: 100%;
   height: 100%;

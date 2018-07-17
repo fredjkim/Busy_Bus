@@ -4,7 +4,7 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>iPhone X BusyBus List Page</title>
-    <!--jquery script-->
+    <!--jquery script toggles full list view-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script>$(function() {
       $('.list_container').on('click', function(){
@@ -12,8 +12,6 @@
       });
     });
     </script>
-
-
   </head>
   <body>
     <div class="container">
@@ -27,8 +25,9 @@
             <div class="bot_line"></div>
           </svg>
         </div>
+
         <!--bus stop-->
-        <p>Washington and State</p>
+        <h1>Washington and State</h1>
       </nav>
       <div class="map_container">
         <div class="map_image"></div>
@@ -36,80 +35,85 @@
       <div class="list_container">
         <div class="swiper"></div>
         <p class="transit_header">Incoming Transit</p>
+
         <!--column categories-->
-        <div class="row_container data_category">
-          <section class="left_col">Line</section>
-          <section class="true_center">Destination</section>
-          <section class="right_col">Frequency</section>
-        </div>
+        <section class="row_container data_category">
+          <h2 class="left_col">Line</h2>
+          <h2 class="true_center">Destination</h2>
+          <h2 class="right_col">Frequency</h2>
+
+        <!--separator-->
+        </section>
         <svg id="line">
           <line x1="0" y1="0" x2="500" y2="000" style="stroke:#efefef;stroke-width:3pt" />
         </svg>
+
         <!--eastbound-->
-        <div class="bus_group first">Eastbound</div>
-        <div class="row_container">
-          <section class="left_col">
+        <h3 class="bus_group first">Eastbound</h3>
+        <ul class="row_container">
+          <li class="left_col">
             <div class="bus_number">60</div>
-            </section>
-          <section class="center_col">Randolph/Harbor​ ​Dr</section>
-          <section class="right_col green">20 min</section>
-        </div>
-        <div class="row_container">
-          <section class="left_col">
-            <div class="bus_number">124</div></section>
-          <section class="center_col">Navy​ ​Pier</section>
-          <section class="right_col green">10 min</section>
-        </div>
+          </li>
+          <li class="center_col">Randolph/Harbor​ ​Dr</li>
+          <li class="right_col green">20 min</li>
+        </ul>
+        <ul class="row_container">
+          <li class="left_col">
+            <div class="bus_number">124</div></li>
+          <li class="center_col">Navy​ ​Pier</li>
+          <li class="right_col green">10 min</li>
+        </ul>
+
         <!--northbound-->
-        <div class="bus_group">Northbound</div>
-        <div class="row_container">
-          <section class="left_col">
-            <div class="bus_number">151</div></section>
-          <section class="center_col">Devon/Clark</section>
-          <section class="right_col green">16 min</section>
-        </div>
+        <h3 class="bus_group">Northbound</h3>
+        <ul class="row_container">
+          <li class="left_col">
+            <div class="bus_number">151</div></li>
+          <li class="center_col">Devon/Clark</li>
+          <li class="right_col green">16 min</li>
+        </ul>
+
         <!--southbound-->
-        <div class="bus_group">Southbound</div>
-        <div class="row_container">
-          <section class="left_col">
-            <div class="bus_number">J14</div></section>
-          <section class="center_col">103rd/Stony​ ​Island</section>
-          <section class="right_col green">15 min</section>
-        </div>
-        <div class="row_container">
-          <section class="left_col">
-            <div class="bus_number">124</div></section>
-          <section class="center_col">Navy Pier</section>
-          <section class="right_col green">10 min</section>
-        </div>
+        <h3 class="bus_group">Southbound</h3>
+        <ul class="row_container">
+          <li class="left_col">
+            <div class="bus_number">J14</div></li>
+          <li class="center_col">103rd/Stony​ ​Island</li>
+          <li class="right_col green">15 min</li>
+        </ul>
+        <ul class="row_container">
+          <li class="left_col">
+            <div class="bus_number">124</div></li>
+          <li class="center_col">Navy Pier</li>
+          <li class="right_col green">10 min</li>
+        </ul>
+
         <!--reroute-->
-        <div class="bus_group">Reroute</div>
-        <div class="row_container">
-          <section class="left_col">
-            <div class="bus_number">6x</div></section>
-          <section class="center_col">Jackson​ ​Park​ ​Express</section>
-          <section class="right_col">N/A</section>
-        </div>
+        <h3 class="bus_group">Reroute</h3>
+        <ul class="row_container">          <li class="left_col">
+            <div class="bus_number">6x</div></li>
+          <li class="center_col">Jackson​ ​Park​ ​Express</li>
+          <li class="right_col">N/A</li>
+        </ul>
+
         <!--out of service-->
-        <div class="bus_group">Out of Service</div>
-        <div class="row_container">
-          <section class="left_col">
-            <div class="bus_number">4</div></section>
-          <section class="center_col">Cottage Grove</section>
-          <section class="right_col green">Resumes 12:10am</section>
-        </div>
-        <div class="row_container">
-          <section class="left_col">
-            <div class="bus_number">20</div></section>
-          <section class="center_col">Madison</section>
-          <section class="right_col green">Resumes 12:10am</section>
-        </div>
-        <div class="row_container">
-          <section class="left_col">
-            <div class="bus_number">157</div></section>
-          <section class="center_col">Streeterville/Taylor</section>
-          <section class="right_col green">10 min</section>
-        </div>
+        <h3 class="bus_group">Out of Service</h3>
+        <ul class="row_container">          <li class="left_col">
+            <div class="bus_number">4</div></li>
+          <li class="center_col">Cottage Grove</li>
+          <li class="right_col green">Resumes 12:10am</li>
+        </ul>
+        <ul class="row_container">          <li class="left_col">
+            <div class="bus_number">20</div></li>
+          <li class="center_col">Madison</li>
+          <li class="right_col green">Resumes 12:10am</li>
+        </ul>
+        <ul class="row_container">          <li class="left_col">
+            <div class="bus_number">157</div></li>
+          <li class="center_col">Streeterville/Taylor</li>
+          <li class="right_col green">10 min</li>
+
+        </ul>
       </div>
     </div>
   </body>
