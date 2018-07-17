@@ -10,7 +10,6 @@ body {
   overflow: hidden;
   width: 375px;
   height: 812px;
-
   margin: 16px auto;
   background-color: #dadada;
 }
@@ -31,14 +30,53 @@ body {
   position: absolute;
   top: 55%;
 }
-.nav_box #chevron {
+.chevron {
+  height: 100%;
+  width: 100%;
   margin: 0 16px;
   position: absolute;
   top: 55%;
 }
-#status_bar {
+
+.chevron_container {
+  position: absolute;
+  top: 55%;
+  width: 20px;
+  height: 30px;
+  margin-left: 16px;
+}
+
+.top_line {
+  border-radius: 5px;
+  height: 15px;
+  width: 3px;
+  transform: rotate(45deg);
+  background-color: #fff;
+}
+
+.bot_line {
+  border-radius: 5px;
+  height: 15px;
+  width: 3px;
+  transform: rotate(-45deg) translateX(4px) translateY(-4px);
+  background-color: #fff;
+
+}
+
+
+.status_bar {
   position: relative;
-  margin: 0 16px;
+  background-image: url("https://github.com/fredjkim/busybus/blob/master/images/status_Bar.png?raw=true");
+  background-size: cover;
+  width: 94%;
+  height: 100%;
+  margin: 16px 16px;
+}
+
+.status_container {
+  position: relative;
+  width: 375px;
+  height: 20px;
 }
 
 .map_container {
@@ -70,11 +108,15 @@ body {
   transform: translateY(-45.8%);
 }
 
-#swiper {
+.swiper {
   position: relative;
   display: block;
+  border-radius: 5px;
+  height: 6px;
+  width: 10%;
   margin-left: auto;
   margin-right: auto;
+  background-color: #C1C1C1;
 }
 
 .transit_header {
